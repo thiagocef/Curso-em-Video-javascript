@@ -55,7 +55,7 @@
             <input type="number" name="txtn1" id="txtn1"> +
             <input type="number" name="txtn2" id="txtn2">
             <input type="button" value="=" onclick="somar()">
-            <div id="res">Resultado</div>
+            <div id="res"></div>
         </div>
     </section>
 
@@ -63,6 +63,7 @@
 
     <script>
         function somar() {
+            //fazendo referência aos elementos html
             var tn1 = document.getElementById('txtn1')
             var tn2 = document.querySelector('input#txtn2')
             var res = document.getElementById('res')
