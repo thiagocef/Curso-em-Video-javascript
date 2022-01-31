@@ -5,7 +5,7 @@ function carregar() {
     var data = new Date() //data atual
     var hora = data.getHours() //hora atual
 
-    var hora = 22 //teste de horas
+    //var hora = 22 teste de horas
     //altera o conteudo da div #msg
     msg.textContent = `Agora são ${hora}h`
 
