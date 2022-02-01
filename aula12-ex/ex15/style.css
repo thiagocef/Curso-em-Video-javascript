@@ -33,30 +33,39 @@ main {
 
     margin: auto;
     margin-top: 15px;
-    /*
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    */
-}
-/*
-div.content {
-    border: 1px solid black;
-
-    width: 70%;
-    height: 100px;
     
-    display: inline-block;
-    margin-top: 30px;
-    margin-left: 75px;
 }
-*/
+div#content {
+    margin-left: 20px;
+    padding-top: 20px;
+    line-height: 30px;
+}
+#btVerificar {
+    padding: 5px;
+    border: 1px solid #25256b;
+    border-radius: 5px;
+
+    margin-bottom: 7px;
+
+    color: white;
+    background-color: #25256b;
+    cursor: pointer;
+}
+#btVerificar:hover {
+    background-color: #0b0b46;
+}
+
+#img {
+    text-align: center;
+    margin-top: 23px;
+}
 
 img {
-    width: 300px;
-    height: 300px;
-    border-radius: 300px;
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    
+    
 }
 footer {
     

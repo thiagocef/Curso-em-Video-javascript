@@ -7,23 +7,30 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <title>Modelo</title>
+    <title>Verificador de Idade</title>
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Verificador de Idade</h1>
     </header>
 
     <main>
+        
+        <div id="content">
+            <p> Ano de Nascimento <input type="number" id="inAno"> </p>
+            
+            <p>
+            Sexo:
+            Masculino <input type="radio" name="sexo" id="inMasculino">
+            Feminino <input type="radio" name="sexo" id="inFeminino">
+            </p>
+            
+            <p><input type="button" value="Verificar" id="btVerificar"></p>
 
-            <div class="content">
-                <p>Ano de Nascimento
-                <input type="number">
-                </p>
-            </div>
-            <div class="content">
-                <img src="img/bebe.jpg" alt="bebe">
-            </div>
+            <p>Preencha os dados acima para ver o resultado</p>
+        </div>
+
+        <div id="img"><img src="img/bebe.jpg" alt="bebe"></div>
 
     </main>
 
