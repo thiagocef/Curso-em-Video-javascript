@@ -40,11 +40,27 @@ div#content {
     padding-top: 20px;
     line-height: 30px;
 }
+span {
+    font-weight: bold;
+    color: #25256b;
+}
+
+input#inNascimento {
+    width: 70px;
+    height: 30px;
+    border: 1px solid #a2a2b4;
+    border-radius: 5px;
+
+    text-align: center;
+
+    font-size: 18px;
+}
 #btVerificar {
     padding: 5px;
     border: 1px solid #25256b;
     border-radius: 5px;
 
+    
     margin-bottom: 7px;
 
     color: white;
@@ -57,6 +73,9 @@ div#content {
 #outResposta {
     text-align: center;
     margin-bottom: 10px;
+
+    font-weight: bold;
+    color: #25256b;
 }
 
 div#imagem {
