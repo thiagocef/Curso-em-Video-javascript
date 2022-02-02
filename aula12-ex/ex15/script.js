@@ -24,7 +24,7 @@ function verificarIdade() {
     }
 
     //condições
-    //homem bebe
+    //homem bebe - NO FINAL DO SCRIPT TEM OUTRA FORMA DE VERIFICAR O INPUT RADIO
     if (masculino && (resultado <= 3)) {
         foto.src = 'img/bebe.jpg'
         outResposta.textContent = `Detectamos um menino de ${resultado} ano(s)`
@@ -83,7 +83,7 @@ function verificarIdade() {
                 //adulto
             }   else if (feminino && (resultado <= 54)){
                 foto.src = 'img/30-anos-mulher.jpg'
-                outResposta.textContent = `Detectamos um adulta de ${resultado} ano(s)`
+                outResposta.textContent = `Detectamos uma adulta de ${resultado} ano(s)`
 
                     //jovem senhor
                 }   else if (feminino && (resultado <= 72)){
@@ -101,3 +101,25 @@ function verificarIdade() {
 
     //criando evendo ao clicar no botão
     btVerificar.addEventListener("click", verificarIdade)
+
+    /*
+    OUTRA FORMA DE VERIFICAR O INPUT RADIO
+    
+    var genero = '' //variável vazia
+
+    //se o que tiver marcado for o name="sexo" na posição 0 (masculino)
+    if (sexo[0].checked) {
+        genero = 'Homem'
+
+      //se o que tiver marcado for o name="sexo" na posição 1 (feminino)  
+    } else if (sexo[1].checked) {
+        genero = 'Mulher'
+    }
+    
+    
+    
+    
+    
+    
+    
+    */
