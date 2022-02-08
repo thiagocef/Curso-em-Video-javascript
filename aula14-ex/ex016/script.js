@@ -11,8 +11,8 @@ function contar() {
     var passo = Number(inPasso.value)
 
     //repetição
-    for (var inicio = 0; inicio <= fim; passo) {
-        outResultado.textContent = `${inicio}, `
+    for (var inicio = 0; inicio <= fim; inicio + passo) {
+        outResultado.textContent = inicio
     }
 }
     //referencia ao botão
