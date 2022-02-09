@@ -17,19 +17,17 @@
     <main>
 
         <div class="content">
-            <p>Inicio <input type="text" id="inInicio"></p>
+            <p>Inicio <input type="number" id="inInicio"></p>
 
-            <p>Fim <input type="text" id="inFim"></p>
+            <p>Fim <input type="number" id="inFim"></p>
 
-            <p>Passo <input type="text" id="inPasso"></p>
+            <p>Passo <input type="number" id="inPasso"></p>
         </div>
 
         <div class="content">
-            <input type="button" value="Contar" id="btContar">
+            <input type="button" value="Contar" onclick="contar()">
 
-            <p>Contando:</p>
-
-            <p id="outResultado"></p>
+            <p id="outResultado">Preparando contagem...</p>
         </div>
 
     </main>
