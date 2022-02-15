@@ -16,16 +16,15 @@ console.log = comerPizza()
  */
 function encherCopo(){
     var c = 1
-    console.log(`Enchendo copo...`)
-
     do {
-        console.log(`Copo ${c}0% cheio!`)
+        if (c == 6) {
+            console.log(`Copos completamente cheios!`)
+            
+        } else {
 
-        if(c == 5) {
-            console.log(`Metade do copo cheio!`)
-        }
-        c++
-         
-    } while (c <= 10)
+            console.log(`Enchendo copo ${c}...`)
+            c++
+        } 
+    } while (c <= 6)
 }
 console.log = encherCopo()

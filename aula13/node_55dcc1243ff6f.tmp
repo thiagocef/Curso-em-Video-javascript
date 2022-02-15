@@ -1,0 +1,14 @@
+function comerPizza() {
+    var c = 1
+
+    while(c <= 8){
+        console.log(`Fatia ${c}`)
+        c++
+
+        if(c = 8) {
+            console.log(`Ultima fatia`)
+
+        }
+    }
+}
+console.log = comerPizza()
