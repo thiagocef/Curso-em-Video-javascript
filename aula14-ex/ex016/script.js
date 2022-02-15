@@ -19,25 +19,29 @@ function contar() {
         location.reload() //recarrega a página
         return
     } else {
+        if (passo <= 0) {
+            alert(`Passo inválido! Considerando passo = 1`)
+            passo = 1
+        }
 
         //alterando o conteúdo de outResultado
-        outResultado.textContent = `Contando...`
+        outResultado.innerHTML = `Contando... <br>`
     
         if (inicio < fim) {
         //repetição - contagem crescente
                 for (var c = inicio; c <= fim; c += passo) {
                     //+= outResultado pega o que ja tem(Contando...) e concatena com o valor recebido (c)                        
-                    outResultado.textContent += ` ${c} \u{1F449}` //adicionando emoji
+                    outResultado.innerHTML += ` ${c} \u{1F449}` //adicionando emoji
                 } 
         }  else {
                 //repetição - contagem decrescente
                 for (var c = inicio; c >= fim; c -= passo) {
-                    outResultado.textContent += ` ${c} \u{1F449}`
+                    outResultado.innerHTML += ` ${c} \u{1F449}`
                 }
             }
         
         //+= outResultado pega o que ja tem(c) e concatena com o valor recebido (\u{1F3C1}) 
-        outResultado.textContent += `\u{1F3C1}`
+        outResultado.innerHTML += `\u{1F3C1}`
    }
 }   
     /*-----------------------------------------------------------------------------------------
