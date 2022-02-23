@@ -1,19 +1,22 @@
 function gerarTabuada() {
-    //referencia aos elementos HTML
-    let inNumero = document.getElementById("inNumero")
-    let outResultado = document.getElementById("outResultado")
+    var inNumero = document.getElementById("inNumero")
+    var tabuada = document.getElementById("selTab")
 
-    //recebendo o valor digitado no input
-    let numero = Number(inNumero.value)
-
-    //fazendo a repetição
-    let c = 1
-    let resposta = " "
     
-    while (c <= 10) {
-        resposta = `${numero} X ${c} = ${numero * c}`
-        
-        outResultado.textContent = resposta
-        c++
+
+    if (inNumero.value.length == 0) {
+        alert("Digite um número")
+    } else {
+       
+        var numero = Number(inNumero.value)
+        tabuada.innerHTML = ''//começa vazio
+        for(c = 1; c<= 10; c++) {
+            //cria um elemento HTML do tipo option
+            var item = document.createElement("option")
+            item.text = `${numero} X ${c} = ${numero*c}`
+            
+            //cria um elemento filho dentro do select id="selTab"
+            tabuada.appendChild(item)
+        }
     }
 }
