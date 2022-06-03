@@ -1,12 +1,13 @@
-function corrida() {
-    console.log(`Foi dada a largada!!`)
-    for (var c = 1; c <= 8; c++) {
-        console.log(`${c}ª volta!`)
+/* var c = 1
 
-        if (c == 7) {
-            console.log(`Última volta!`)
-        }
-    }
-    console.log(`Fim da corrida!`)
+while (c <= 3) {
+    console.log(c)
+    c++
 }
-corrida()
+ */
+
+//=================================
+
+for (var c = 1; c <= 3; c++) {
+    console.log(c)
+}

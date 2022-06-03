@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,27 +8,15 @@
 
     <style>
         body {
-            font: normal 2em Arial;
+            background-color: aquamarine;
         }
-
+        
     </style>
-
 </head>
 <body>
-    
     <script>
-        var nome = prompt('Qual é o seu nome? ')
-        var sal = Number(prompt('Qual o seu salário? '))
-        //deve colocar Number para receber o valor numero, pois o prompt recebe uma string por padrão
-
-        document.writeln(`Olá, <strong>${nome}</strong> ! <br> Seu nome tem ${nome.length} letras. <br>`) //write (escreve no documento) - mostra o resultado na página
-
-        document.writeln(`Seu salário é ${sal.toFixed(2)} mensais , <br>`)
-        //mosta o salário com duas casas decimais após o ponto
-
-        document.writeln(`Seu nome em maiúsculas é: ${nome.toUpperCase()} <br>`)
-
-        document.writeln(`Seu nome em minusculas é: ${nome.toLowerCase()}`)
+        var nome = prompt(`Qual é o seu nome?`)
+        document.writeln(`Seu nome tem ${nome.length} letras`)
     </script>
 </body>
 </html>

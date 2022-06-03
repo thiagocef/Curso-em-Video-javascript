@@ -11,9 +11,9 @@
         }
         c++
     }
-}
+} */
 console.log = comerPizza()
- */
+
 function encherCopo(){
     var c = 1
     console.log(`Enchendo copo...`)

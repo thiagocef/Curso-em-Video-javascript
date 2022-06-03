@@ -12,7 +12,7 @@ console.log(`O comprimento desse vetor é: ${num.length}`)
 console.log(`Os elementos em ordem ficam: ${num.sort()}`)
 
 console.log(`Pesquisando o valor 8 dentro do vetor. 8 está na posição: ${num.indexOf(8)}`)
-//se o valor não for encontrado, vai retornar -1
+//se o valor não for encontrado, o javascript vai retornar -1
 
 //pesquisando o valor 4 que não existe
 let pos = num.indexOf(4)
