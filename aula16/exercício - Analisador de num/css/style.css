@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Exo:ital,wght@0,100;0,400;0,600;1,200&family=Inconsolata:wght@200;400&family=Nunito:ital,wght@0,200;0,400;0,700;1,400&family=Schoolbell&display=swap');
+
+/* font-family: 'Cinzel', serif;
+font-family: 'Exo', sans-serif;
+font-family: 'Inconsolata', monospace;
+font-family: 'Nunito', sans-serif;
+font-family: 'Schoolbell', cursive; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --cor00: #ffffff;
+    --cor01: #FD8A76;
+    --cor02: #6D64E7;
+    --cor03: #414141;
+}
+
+body {
+    background-color: var(--cor02);
+    font-family: 'Nunito', sans-serif;
+}
+
+main {
+    background-color: var(--cor01);
+    max-width: 550px;
+    min-width: 270px;
+    border-radius: 10px;
+    margin: 30px auto;
+    padding: 0 30px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.212);
+}
+
+h1 {
+    text-align: center;
+    color: var(--cor00);
+    border-bottom: 2px solid #fd745c6b;
+    line-height: 70px;
+}
+
+.entrada {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    margin: 20px 0 6px 0;
+    color: var(--cor00);
+    font-size: 28px;
+}
+
+#inNumero {
+    width: 100px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;    
+    padding: 8px;
+}
+
+#outCadastrados {
+    margin-left: 25px;
+    color: var(--cor00);
+    font-size: 20px;
+}
+
+.botoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+    border-top: 2px solid #fd745c6b;
+    border-bottom: 2px solid #fd745c6b;
+}
+
+.botoes input {
+    font-size: 30px;
+    background-color: var(--cor01);
+    color: var(--cor00);
+    padding: 15px;
+    margin: 20px 0;
+    border: 1px solid var(--cor00);
+    border-radius: 20px;
+}
+.botoes input:hover {
+    background-color: var(--cor00);
+    color: var(--cor01);
+    cursor: pointer;
+}
+.resultado {
+    color: var(--cor00);
+    margin-left: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #fd745c6b;
+}
+
+.resultado p {
+    line-height: 30px;
+    font-size: 18px;
+}
+
+#outOrdem {
+    color: var(--cor00);
+    margin-left: 20px;
+    padding: 20px 0;
+    font-style: italic;
+    font-size: 14px;
+}
+
+

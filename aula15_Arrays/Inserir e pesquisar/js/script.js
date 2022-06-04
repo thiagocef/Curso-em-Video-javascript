@@ -4,7 +4,7 @@ var inPesquisar = document.getElementById("inPesquisar")
 var outMostrar = document.getElementById("outMostrar")
 var outResposta = document.getElementById("outResposta")
 
-//ARREY QUE RECEBERÁ OS NUMEROS INSERIDOS
+//ARRAY QUE RECEBERÁ OS NUMEROS INSERIDOS
 var caixa = []
 
 //================= FUNÇÃO INSERIR UM NUMERO =======================
