@@ -1,7 +1,7 @@
 ///variáveis globais
 let inNumero = document.getElementById("inNumero")
 let outCadastrados = document.getElementById("outCadastrados")
-let cadastro = [] //array para receber os numeros
+let valores = [] //array para receber os numeros
 
 //============= FUNÇÃO CADASTRAR ==============
 
@@ -13,11 +13,24 @@ function cadastrar() {
         alert(`Insira um número entre 1 e 100`)
         inNumero.focus()
         return
-
-    } else { //cadastrando os numeros no array cadastro
-        cadastro.push(numero)//insere no final do array
-        outCadastrados.textContent = cadastro
     }
+
+    //verificando se o número já foi cadastrado
+    // -1 significa que o número não existe no vetor
+    else if (valores.indexOf(numero) != -1) { 
+        alert(`Número já cadastrado`)
+        inNumero.value = '' //limpa o input
+        inNumero.focus()
+        return
+
+        } else {//cadastrando os numeros no array valores
+            valores.push(numero)//insere no final do array
+            outCadastrados.textContent = valores
+            
+    }
+
+    inNumero.value = '' //limpa o input a cada número adicionado
+    inNumero.focus()
 }
     //chamando a função cadastrar
     var btAdicionar = document.getElementById("btAdicionar")
@@ -32,22 +45,29 @@ function analisar() {
     var outSoma = document.getElementById("outSoma")
     var outMedia = document.getElementById("outMedia")
 
+    //se clicar em finalizar sem nenhum valor cadastrado
+    if(valores.length == 0) {
+        alert(`Adicione valores antes de finalizar`)
+        inNumero.focus()
+        return
+    }
+
     //os números em ordem crescente
-    var ordem = cadastro.sort(function(a, b){
+    var ordem = valores.sort(function(a, b){
         return a - b
     }) 
     
     //tamanho o array (quantidade de valores)
-    var total = cadastro.length 
+    var total = valores.length 
     outTotal.textContent = `Ao todo, temos ${total} números cadastrados`
 
     //pegando ultimo índice
-    //após o cadastro.sort(), o útimo será o maior
-    var maior = cadastro[cadastro.length - 1] 
+    //após o valores.sort(), o útimo será o maior
+    var maior = valores[valores.length - 1] 
     outMaior.textContent = `O maior número informado é ${maior}`
 
     //pegando o primeiro índice
-    //após o cadastro.sort(), o primeiro será o menor
+    //após o valores.sort(), o primeiro será o menor
     var menor = ordem[0] 
     outMenor.textContent = `O menor número é ${menor}`
 
@@ -55,7 +75,7 @@ function analisar() {
     var soma = 0
 
     for (var c = 0; c < total; c++) {
-        soma += cadastro[c] //c percorre o array e soma cada número
+        soma += valores[c] //c percorre o array e soma cada número
         outSoma.textContent = `A soma dos números é ${soma}` 
     }
 
@@ -68,5 +88,6 @@ function analisar() {
     outOrdem.textContent = `Em ordem ficam: ${ordem}`
    //------------------------------------------------------------------ 
 }
+
     var btFinalisar = document.getElementById("btFinalizar")
     btFinalisar.addEventListener("click", analisar)

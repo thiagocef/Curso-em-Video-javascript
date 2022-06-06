@@ -28,9 +28,9 @@ body {
 main {
     background-color: var(--cor01);
     max-width: 550px;
-    min-width: 270px;
+    min-width: 280px;
     border-radius: 10px;
-    margin: 30px auto;
+    margin: 60px auto;
     padding: 0 30px;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.212);
 }
@@ -91,7 +91,7 @@ h1 {
 }
 .resultado {
     color: var(--cor00);
-    margin-left: 20px;
+    
     padding-bottom: 20px;
     border-bottom: 2px solid #fd745c6b;
 }
@@ -99,6 +99,7 @@ h1 {
 .resultado p {
     line-height: 30px;
     font-size: 18px;
+    margin-left: 20px;
 }
 
 #outOrdem {
